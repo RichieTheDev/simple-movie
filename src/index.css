@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Light theme */
+#light {
+  background-color: #f3ebf6;
+  color: #04032e;
+}
+
+/* Dark theme */
+#dark {
+  background-color: #04032e;
+  color: #f3ebf6;
+}
+
+/* Utility class for flex display */
+.flexdivs {
+  @apply flex justify-center items-center mx-auto;
+}
+
+/* Utility class for menu hover effect */
+.menuhover {
+  @apply hover:text-amber-600 text-lg p-4;
+}
+
+/* Container for headers */
+.headercontainer {
+  @apply pt-10 sm:pt-14 flex justify-between items-center;
+}
+
+/* Styles for headings */
+.headings {
+  @apply text-2xl sm:text-4xl flex space-x-2;
+}
+
+/* Styles for mini heading */
+.miniheading {
+  @apply sm:text-2xl text-xl flex items-center space-x-2;
+}
+
+/* Styles for movie images */
+.movieimages {
+  @apply h-52 w-52 sm:w-64 sm:h-64 object-cover rounded-lg;
+}
